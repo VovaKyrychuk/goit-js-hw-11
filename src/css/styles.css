@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  background-image: linear-gradient(to right, #757f9a, #d7dde8);
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+}
+.search-input {
+  margin: 0 auto;
+  margin-top: 20px;
+
+  font: inherit;
+  padding: 5px 15px;
+  max-width: 320px;
+  width: 320px;
+  height: 45px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  border: 3px solid darkslategray;
+  outline: none;
+
+  background: transparent;
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+.search-btn {
+  background: transparent;
+  color: black;
+  font-weight: 600;
+  max-width: 320px;
+  height: 45px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  font-size: 16px;
+  border: 3px solid darkslategray;
+}
+
+.search-btn:hover {
+  color: #fff;
+  background: #444;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  /* position: relative;
+  height: 100%; */
+}
+.load-more {
+  /* position: absolute; */
+  background: transparent;
+  color: black;
+  font-weight: 600;
+  max-width: 320px;
+  height: 45px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 16px;
+  border: 3px solid darkslategray;
+}
+
+.load-more:hover {
+  color: #fff;
+  background: #444;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.photo-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 200px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 0 5px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.gallery-item {
+  max-width: 200px;
+}
+.gallery-item:hover img {
+  transform: scale(1.15);
+}
+
+.gallery-item img {
+  width: 190px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  color: #444;
+}
+.info-box {
+  max-width: 50px;
+  text-align: center;
+  line-height: 3px;
+  font-size: 10px;
+}
