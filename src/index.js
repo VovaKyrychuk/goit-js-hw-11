@@ -33,7 +33,7 @@ async function eventHandler(e) {
       if (name.hits.length > 0) {
         Notiflix.Notify.success(`Hooray! We found ${name.totalHits} images.`);
         renderGallery(name);
-        new SimpleLightbox('.gallery a');
+        new SimpleLightbox('.gallery a').refresh();
 
         if (page < totalPages) {
           loadBtn.style.display = 'block';
